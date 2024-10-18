@@ -5,7 +5,7 @@ const Imgparagrap = () => {
   return (
     <>
       {/* First section: Image first, then Typography */}
-      <Box sx={{paddingTop:"10vh",paddingBottom:"2vh"}}>
+      <Box sx={{paddingTop:"10vh",paddingBottom:"vh"}}>
       <Box
         sx={{
           display: "flex",
@@ -13,12 +13,12 @@ const Imgparagrap = () => {
           alignItems: "center",
           justifyContent: "", // Ensure even spacing between image and text
           mb: 4, // Margin-bottom for spacing between sections
-          px: { xs: 2, sm: 3, md: 4, lg: 4 }, // Padding for all screen sizes
+          px: { xs: 2, sm: 3, md: 2, lg: 4 }, // Padding for all screen sizes
         }}
       >
         <Box
           component="img"
-          src="Cover@.svg" // Replace with your image
+          src="8a905aef575f3acb820ba79b4641770d.jpg" // Replace with your image
           alt="First Image"
           sx={{
             width: { xs: "40%", sm: "35%", md: "20%" }, // Responsive width to ensure circular shape on different screens
@@ -52,7 +52,7 @@ const Imgparagrap = () => {
       >
      <Box
           component="img"
-          src="Cover@.svg" // Replace with your image
+          src="360_F_277685185_UAYxm224UPelni1rxsuAUZQbfhly0RpL.jpg" // Replace with your image
           alt="Second Image"
           sx={{
             width: { xs: "40%", sm: "35%", md: "20%" }, // Responsive width to ensure circular shape
@@ -71,7 +71,6 @@ const Imgparagrap = () => {
             width: { xs: "100%", sm: "80%", md: "60%" }, // Adjust paragraph width to be responsive
           }}
         >
-          Matchmaker  combines the power of technology,  Our experienced Jewish Matchmakers are from diverse backgrounds, and focus on different age groups, religious levels, locations and personalities. Throughout the world, our matchmakers work with Jewish singles who consider themselves "Just Jewish", 
         </Typography>
         
       </Box>
