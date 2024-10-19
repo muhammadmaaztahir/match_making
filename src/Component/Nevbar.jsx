@@ -33,11 +33,11 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <Hidden smDown>
           <Box sx={{ display: 'flex', gap: 3 }}>
-            <Button color="inherit" href="#">Home</Button>
-            <Button color="inherit" href="#">About Us</Button>
-            <Button color="inherit" href="#">Success</Button>
-            <Button color="inherit" href="#">Matchmakers</Button>
-            <Button color="inherit" href="#">Events</Button>
+            <Button color="inherit" href="/">Home</Button>
+            <Button color="inherit" href="/about">About Us</Button>
+            <Button color="inherit" href="/succes">Success</Button>
+            <Button color="inherit" href="/matchmaker">Matchmakers</Button>
+            <Button color="inherit" href="events">Events</Button>
             <Button 
   sx={{ 
     backgroundColor: "#F63131", 
@@ -68,7 +68,9 @@ export default function Navbar() {
             color="inherit"
           >
             <AiOutlineMenu size={30} />
-          </IconButton>
+          </IconButton>import { RiCarFill } from "react-icons/ri";
+
+RiCarFill
         </Hidden>
       </Toolbar>
 

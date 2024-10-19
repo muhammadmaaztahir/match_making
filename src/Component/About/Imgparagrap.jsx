@@ -13,7 +13,7 @@ const Imgparagrap = () => {
           alignItems: "center",
           justifyContent: "", // Ensure even spacing between image and text
           mb: 4, // Margin-bottom for spacing between sections
-          px: { xs: 2, sm: 3, md: 2, lg: 4 }, // Padding for all screen sizes
+          px: { xs: 2, sm: 3, md: 4, lg: 4 }, // Padding for all screen sizes
         }}
       >
         <Box
@@ -71,7 +71,10 @@ const Imgparagrap = () => {
             width: { xs: "100%", sm: "80%", md: "60%" }, // Adjust paragraph width to be responsive
           }}
         >
-        </Typography>
+        
+       Matchmaker was started with the simple goal of helping Jewish singles find their soul mates, their bashert. Now the challenge is finding the soul mate, the bashert, that you saw at Sinai.</Typography>
+        
+ 
         
       </Box>
    
