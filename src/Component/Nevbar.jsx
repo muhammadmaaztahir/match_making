@@ -9,6 +9,8 @@ import MenuItem from '@mui/material/MenuItem';
 import Box from '@mui/material/Box';
 import Hidden from '@mui/material/Hidden';
 import { AiOutlineMenu } from 'react-icons/ai'; // React icons for the hamburger menu icon
+import { RiCarFill } from "react-icons/ri";
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [mobileMenuAnchor, setMobileMenuAnchor] = useState(null);
@@ -32,29 +34,29 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <Hidden smDown>
-          <Box sx={{ display: 'flex', gap: 3 }}>
-            <Button color="inherit" href="/">Home</Button>
-            <Button color="inherit" href="/about">About Us</Button>
-            <Button color="inherit" href="/succes">Success</Button>
-            <Button color="inherit" href="/matchmaker">Matchmakers</Button>
-            <Button color="inherit" href="events">Events</Button>
-            <Button 
-  sx={{ 
-    backgroundColor: "#F63131", 
-    color: "black", 
-    borderRadius: "24px" // Adjust the value as needed for the desired roundness
-  }} 
-  href="#">
-  Login
-</Button>
-<Button 
-  sx={{ 
-    backgroundColor: "#F63131", 
-    color: "black", 
-    borderRadius: "24px" // Adjust the value as needed for the desired roundness
-  }}>
-  Signup
-</Button>
+          <Box className= 'items-center' sx={{ display: 'flex', gap: 3 }}>
+            <Link color="inherit" to="/">Home</Link>
+            <Link color="inherit" to="/about">About Us</Link>
+            <Link color="inherit" to="/succes">Success</Link>
+            <Link color="inherit" to="/matchmaker">Matchmakers</Link>
+            <Link color="inherit" to="events">Events</Link>
+            <Button
+              sx={{
+                backgroundColor: "#F63131",
+                color: "black",
+                borderRadius: "24px" // Adjust the value as needed for the desired roundness
+              }}
+              href="#">
+              Login
+            </Button>
+            <Button
+              sx={{
+                backgroundColor: "#F63131",
+                color: "black",
+                borderRadius: "24px" // Adjust the value as needed for the desired roundness
+              }}>
+              Signup
+            </Button>
 
           </Box>
         </Hidden>
@@ -68,9 +70,9 @@ export default function Navbar() {
             color="inherit"
           >
             <AiOutlineMenu size={30} />
-          </IconButton>import { RiCarFill } from "react-icons/ri";
+          </IconButton>;
 
-RiCarFill
+          RiCarFill
         </Hidden>
       </Toolbar>
 
@@ -85,10 +87,10 @@ RiCarFill
         <MenuItem onClick={handleMobileMenuClose} component="a" href="#">Matchmakers</MenuItem>
         <MenuItem onClick={handleMobileMenuClose} component="a" href="#">Events</MenuItem>
         <MenuItem onClick={handleMobileMenuClose}>
-        <Button  backgroundColor="#F63131" fullWidth>Signup</Button>
+          <Button backgroundColor="#F63131" fullWidth>Signup</Button>
         </MenuItem>
         <MenuItem onClick={handleMobileMenuClose}>
-          <Button  backgroundColor="#F63131" fullWidth>Signup</Button>
+          <Button backgroundColor="#F63131" fullWidth>Signup</Button>
         </MenuItem>
       </Menu>
     </AppBar>

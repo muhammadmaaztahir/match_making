@@ -1,20 +1,20 @@
 import React from 'react'
 import heroImg from '../assets/heroImg.png'
-import Carousel from '../components/Carousel'
-import DescriptionWithIcon from '../components/DescriptionWithIcon'
+import Carousel from '../Component/Carousel'
+import DescriptionWithIcon from '../Component/DescriptionWithIcon'
 import step1 from '../assets/step1.png'
 import step2 from '../assets/step2.png'
 import step3 from '../assets/step3.png'
 import step4 from '../assets/step4.png'
 import step5 from '../assets/step5.png'
 import banner from '../assets/banner.png'
+import Bashert from '../Component/Bashert'
 
 const Home = () => {
   return (
     <div>
-      <img src={heroImg} alt="" />
-      <h1 className='text-center uppercase text-md text-[#159EEC] font-bold mt-10'>steps to find your bashert</h1>
-      <p className='text-center uppercase w-[50%] mx-auto mt-3'>The  matchmaking process is designed so that your Jewish dating experience is simplified, personalized and efficient. Thousands of Jewish singles of various cultures, backgrounds, ages & interests have found their match & we want to help you too.</p>
+      <img src={heroImg} className='w-full' alt="" />
+     <Bashert/>
       <div className='flex container mx-auto'>
         <div className='mx-auto gap-7 p-10 flex flex-col items-center justify-center'>
             <h1 className='text-[#159EEC] uppercase font-bold'>create profile</h1>
@@ -46,7 +46,7 @@ const Home = () => {
       </div>
 
       <div>
-        <img className='pt-20' src={banner} alt="" />
+        <img className='pt-20 w-full' src={banner} alt="" />
       </div>
     </div>
   )
