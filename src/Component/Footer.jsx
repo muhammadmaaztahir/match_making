@@ -25,7 +25,7 @@ export default function Footer() {
               <a href="/about" style={{ color: 'white', textDecoration: 'none' }} className="hover:underline">About Us</a>
             </Typography>
             <Typography variant="body2" sx={{ color: 'white' }}>
-              <a href="/Success" style={{ color: 'white', textDecoration: 'none' }} className="hover:underline">Success</a>
+              <a href="/Succes" style={{ color: 'white', textDecoration: 'none' }} className="hover:underline">Success</a>
             </Typography>
             <Typography variant="body2" sx={{ color: 'white' }}>
               <a href="/Matchmakers" style={{ color: 'white', textDecoration: 'none' }} className="hover:underline">Matchmakers</a>
