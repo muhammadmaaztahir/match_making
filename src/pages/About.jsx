@@ -1,7 +1,7 @@
 // About.jsx
 import React from 'react';
-import Heroseation from '../Component/About/Imgparagrap';
-import Imgparagrap from '../Component/About/HowItWorks ';
+import Heroseation from '../Component/About/Heroseation';
+import Imgparagrap from '../Component/About/Imgparagrap';
 import HowItWorks from '../Component/About/HowItWorks ';
 import step1 from '../assets/step1.png'
 import step2 from '../assets/step2.png'
@@ -13,6 +13,8 @@ import DescriptionWithIcon from '../Component/DescriptionWithIcon';
 const About = () => {
   return (
     <>
+      <Heroseation />
+   
     <div className='mt-5 container mx-auto flex gap-10 p-10'>
     <DescriptionWithIcon image={step1} />
     <DescriptionWithIcon image={step2} />
@@ -20,7 +22,6 @@ const About = () => {
     <DescriptionWithIcon image={step4} />
     <DescriptionWithIcon image={step5} />
     </div>
-      <Heroseation />
       <Imgparagrap />
       <HowItWorks />
     </>
