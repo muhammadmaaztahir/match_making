@@ -19,19 +19,19 @@ export default function Footer() {
               Quick Links
             </Typography>
             <Typography variant="body2" sx={{ color: 'white' }}>
-              <a href="#" style={{ color: 'white', textDecoration: 'none' }} className="hover:underline">Home</a>
+              <a href="/" style={{ color: 'white', textDecoration: 'none' }} className="hover:underline">Home</a>
             </Typography>
             <Typography variant="body2" sx={{ color: 'white' }}>
-              <a href="#" style={{ color: 'white', textDecoration: 'none' }} className="hover:underline">About Us</a>
+              <a href="/about" style={{ color: 'white', textDecoration: 'none' }} className="hover:underline">About Us</a>
             </Typography>
             <Typography variant="body2" sx={{ color: 'white' }}>
-              <a href="#" style={{ color: 'white', textDecoration: 'none' }} className="hover:underline">Success</a>
+              <a href="/Success" style={{ color: 'white', textDecoration: 'none' }} className="hover:underline">Success</a>
             </Typography>
             <Typography variant="body2" sx={{ color: 'white' }}>
-              <a href="#" style={{ color: 'white', textDecoration: 'none' }} className="hover:underline">Matchmakers</a>
+              <a href="/Matchmakers" style={{ color: 'white', textDecoration: 'none' }} className="hover:underline">Matchmakers</a>
             </Typography>
             <Typography variant="body2" sx={{ color: 'white' }}>
-              <a href="#" style={{ color: 'white', textDecoration: 'none' }} className="hover:underline">Events</a>
+              <a href="Events" style={{ color: 'white', textDecoration: 'none' }} className="hover:underline">Events</a>
             </Typography>
           </Grid>
 
