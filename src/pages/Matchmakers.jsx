@@ -6,3 +6,5 @@ const Matchmakers = ()=>{
 
     )
 }
+
+export default Matchmakers

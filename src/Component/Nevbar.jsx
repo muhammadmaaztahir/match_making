@@ -35,27 +35,28 @@ export default function Navbar() {
           <Box sx={{ display: 'flex', gap: 3 }}>
             <Button color="inherit" href="/">Home</Button>
             <Button color="inherit" href="/about">About Us</Button>
-            <Button color="inherit" href="/succes">Success</Button>
+            <Button color="inherit" href="/success">Success</Button>
             <Button color="inherit" href="/matchmaker">Matchmakers</Button>
-            <Button color="inherit" href="events">Events</Button>
+            <Button color="inherit" href="/events">Events</Button>
             <Button 
-  sx={{ 
-    backgroundColor: "#F63131", 
-    color: "black", 
-    borderRadius: "24px" // Adjust the value as needed for the desired roundness
-  }} 
-  href="#">
-  Login
-</Button>
-<Button 
-  sx={{ 
-    backgroundColor: "#F63131", 
-    color: "black", 
-    borderRadius: "24px" // Adjust the value as needed for the desired roundness
-  }}>
-  Signup
-</Button>
-
+              sx={{ 
+                backgroundColor: "#F63131", 
+                color: "black", 
+                borderRadius: "24px" 
+              }} 
+              href="#"
+            >
+              Login
+            </Button>
+            <Button 
+              sx={{ 
+                backgroundColor: "#F63131", 
+                color: "black", 
+                borderRadius: "24px" 
+              }}
+            >
+              Signup
+            </Button>
           </Box>
         </Hidden>
 
@@ -68,27 +69,26 @@ export default function Navbar() {
             color="inherit"
           >
             <AiOutlineMenu size={30} />
-          </IconButton>import { RiCarFill } from "react-icons/ri";
-
-RiCarFill
+          </IconButton>
         </Hidden>
       </Toolbar>
 
+      {/* Mobile Menu */}
       <Menu
         anchorEl={mobileMenuAnchor}
         open={Boolean(mobileMenuAnchor)}
         onClose={handleMobileMenuClose}
       >
-        <MenuItem onClick={handleMobileMenuClose} component="a" href="#">Home</MenuItem>
-        <MenuItem onClick={handleMobileMenuClose} component="a" href="#">About Us</MenuItem>
-        <MenuItem onClick={handleMobileMenuClose} component="a" href="#">Success</MenuItem>
-        <MenuItem onClick={handleMobileMenuClose} component="a" href="#">Matchmakers</MenuItem>
-        <MenuItem onClick={handleMobileMenuClose} component="a" href="#">Events</MenuItem>
+        <MenuItem onClick={handleMobileMenuClose} component="a" href="/">Home</MenuItem>
+        <MenuItem onClick={handleMobileMenuClose} component="a" href="/about">About Us</MenuItem>
+        <MenuItem onClick={handleMobileMenuClose} component="a" href="/success">Success</MenuItem>
+        <MenuItem onClick={handleMobileMenuClose} component="a" href="/matchmaker">Matchmakers</MenuItem>
+        <MenuItem onClick={handleMobileMenuClose} component="a" href="/events">Events</MenuItem>
         <MenuItem onClick={handleMobileMenuClose}>
-        <Button  backgroundColor="#F63131" fullWidth>Signup</Button>
+          <Button sx={{ backgroundColor: "#F63131", color: "black" }} fullWidth>Login</Button>
         </MenuItem>
         <MenuItem onClick={handleMobileMenuClose}>
-          <Button  backgroundColor="#F63131" fullWidth>Signup</Button>
+          <Button sx={{ backgroundColor: "#F63131", color: "black" }} fullWidth>Signup</Button>
         </MenuItem>
       </Menu>
     </AppBar>

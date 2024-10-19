@@ -10,22 +10,12 @@ import Footer from './Component/Footer';
 
 function App() {
   return (
-    <Router>
-      {/* Navbar */}
-      <Navbar />
-
-      {/* Page Routes */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/success" element={<Succes />} />
-        <Route path="/matchmaker" element={<Matchmaker />} />
-        <Route path="/events" element={<Events />} />
-      </Routes>
-
-      {/* Footer */}
-      <Footer />
-    </Router>
+  <>
+  <Navbar/>
+<Footer/>  
+  
+  
+  </>
   );
 }
 
